@@ -1,6 +1,7 @@
 .PHONY : echo-client echo-server clean install uninstall android-install android-uninstall
 
 all: echo-client echo-server
+	mkdir -p bin
 
 echo-client:
 	cd echo-client; make; cd ..
