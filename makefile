@@ -1,6 +1,8 @@
-.PHONY : echo-client echo-server clean install uninstall android-install android-uninstall
+.PHONY : makebin echo-client echo-server clean install uninstall android-install android-uninstall
 
-all: echo-client echo-server
+all: makebin echo-client echo-server
+
+makebin:
 	mkdir -p bin
 
 echo-client:
